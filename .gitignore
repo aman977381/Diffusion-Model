@@ -9,6 +9,8 @@ __pycache__/
 /results/
 /artifacts/
 /models/
+.idea/
+.vscode/
 
 # Distribution / packaging
 .Python
