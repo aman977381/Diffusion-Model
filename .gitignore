@@ -5,12 +5,10 @@ __pycache__/
 
 # C extensions
 *.so
-/runs/
-/results/
 /artifacts/
-/models/
 .idea/
 .vscode/
+module.py
 
 # Distribution / packaging
 .Python
