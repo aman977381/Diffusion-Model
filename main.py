@@ -7,7 +7,7 @@ from module import UNet
 from torch import optim
 from tqdm import tqdm
 import logging
-from model import SimpleUnet  # Import the SimpleUnet model
+from model import SimpleUnet  
 from torchvision.utils import make_grid
 from io import BytesIO
 from torch.utils.tensorboard import SummaryWriter
@@ -165,12 +165,12 @@ def launch():
     parser = argparse.ArgumentParser()
     args = parser.parse_args()
     args.run_name = "Diffusion_Model"
-    args.epochs = 200
+    args.epochs = 300
     args.batch_size = 64
     args.image_size = 64
     args.dataset_path = r"./artifacts"
     args.device = "cuda"
-    args.lr = 3e-5
+    args.lr = 2e-4
     train(args)
 
 if __name__ == '__main__':
